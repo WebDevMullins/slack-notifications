@@ -19,6 +19,7 @@ jobs:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       uses: 8398a7/action-slack@v3
       with:
+        icon_emoji: :octocat:
         status: custom
         fields: repo,commit,event,action,workflow,ref,url
         custom_payload: |
